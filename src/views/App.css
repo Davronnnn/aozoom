@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../assets/fonts/gilroy-regular.ttf');
+}
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+body {
+    font-family: 'Gilroy' !important;
+}
