@@ -6,7 +6,7 @@ export const postUserInfo = createAsyncThunk(
 	async function (data, { rejectWithValue, dispatch }) {
 		try {
 			let response = await axios.post(
-				`http://backend.aozoom.uz/accounts/login/`,
+				`https://backend.aozoom.uz/accounts/login/`,
 				data.userData
 			);
 

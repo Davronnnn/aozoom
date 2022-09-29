@@ -11,7 +11,7 @@ const { TextArea } = Input;
 
 function EditProduct({ productId }) {
 	const { t } = useTranslation();
-	const baseUrl = 'http://backend.aozoom.uz/swagger/';
+	const baseUrl = 'https://backend.aozoom.uz/swagger/';
 	const navigate = useNavigate();
 	const [data, setData] = useState({});
 	// const { productId } = useParams();

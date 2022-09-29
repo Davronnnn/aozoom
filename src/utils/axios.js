@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const Axios = axios.create({
-	baseURL: 'http://backend.aozoom.uz/',
+	baseURL: 'https://backend.aozoom.uz/',
 	// baseURL: "https://10.80.80.122:8000/api/v1/",
 	timeout: 30000,
 	timeoutErrorMessage: 'Connection is lost. Server not responded',

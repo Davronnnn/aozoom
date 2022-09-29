@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://backend.aozoom.uz/';
+const API_URL = 'https://backend.aozoom.uz/';
 const token = JSON.parse(localStorage.getItem('user_info'))?.data?.token
 	?.access;
 const api = axios.create({

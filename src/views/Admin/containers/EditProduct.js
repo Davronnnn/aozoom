@@ -9,7 +9,7 @@ import colors from '../../../constants/colors';
 const { TextArea } = Input;
 
 function EditProduct() {
-	const baseUrl = 'http://backend.aozoom.uz/swagger/';
+	const baseUrl = 'https://backend.aozoom.uz/swagger/';
 	const navigate = useNavigate();
 	const [data, setData] = useState({});
 	const { productId } = useParams();
