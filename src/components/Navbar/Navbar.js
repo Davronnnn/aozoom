@@ -137,7 +137,7 @@ function Navbar(props) {
 				handleCancel={props.handleCancel}
 			/>
 			<StyledNavbar>
-				<HeaderCarousel />
+				{/* <HeaderCarousel /> */}
 
 				<StyledContainer>
 					<div className='container'>
