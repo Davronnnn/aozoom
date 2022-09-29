@@ -5,7 +5,7 @@ import { StyledContainer } from '../../styles/Container.style';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { StyledNavbar } from './Navbar.style';
 import { Col, Row } from 'antd';
-import Logo from '../../assets/img/logo2.svg';
+import Logo from '../../assets/aozoom_logo_website.png';
 import Birja from '../../assets/img/Birja.svg';
 import Neft from '../../assets/img/neft-logo.svg';
 import HomeIcon from '../../assets/img/home-icon.svg';
@@ -18,7 +18,6 @@ import { MenuIcon, SearchIcon } from '../../utils/Images';
 import COLORS from '../../constants/colors';
 import { UserIcon, ShopCartIcon } from '../../utils/Images';
 import { StyledNavUl } from './NavUl.style';
-import Tread from './Tread';
 import Navigation from './Navigation';
 import useFetchHook from '../../customhooks/useFetchHook';
 import axios from 'axios';
@@ -155,6 +154,8 @@ function Navbar(props) {
 									<img
 										className='logoImg'
 										src={Logo}
+										width={173}
+										height={40}
 										alt='Logo'
 									/>
 								</a>
@@ -238,7 +239,7 @@ function Navbar(props) {
 				<StyledContainer>
 					<div className='container'>
 						<div className='navigation'>
-							<nav style={{ 'background-color': '#364A7E' }}>
+							<nav>
 								<div
 									style={{
 										display: 'flex',
