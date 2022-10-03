@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function ProductDetail(props) {
   const dispatch = useDispatch();
   const { isVisible, handleCancel } = props;
-  const { title, images, price ,description,litre,id} = props.data;
+  const { title, images, price ,description,id} = props.data;
   let userInfo = JSON.parse(localStorage.getItem("user_info"))?.data?.token?.access;
   const navigate = useNavigate()
   const addCard = async(e) => {
@@ -42,7 +42,6 @@ export default function ProductDetail(props) {
           <div className="heading-info">
             <h3>{title}</h3>
             <h4>Цена: {price} UZS</h4>
-            <h2>Объем: {litre}л</h2>
             <Button type="primary" onClick={(e) => addCard(e)}>
               В корзину
             </Button>
