@@ -83,7 +83,6 @@ export default function Basket(props) {
                   <div>
                   <h2>Цена: {price} UZS</h2>
                   <h4>Количество: {item?.quantity}</h4>
-                  <h2>Объем: {litre}л</h2>
                   </div>
                   {/* <div>
                   <span onClick={() => decrement(id)} className="counter">

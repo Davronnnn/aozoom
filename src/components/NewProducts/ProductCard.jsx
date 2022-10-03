@@ -9,7 +9,7 @@ import Axios from "../../utils/axios";
 import { t } from "i18next";
 
 const ProductCard = ({ data, margin }) => {
-  const { images = [], title = "", price = "" ,litre} = data;
+  const { images = [], title = "", price = ""} = data;
   const navigate = useNavigate();
   const [state, setState] = useState(0);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -69,7 +69,6 @@ const ProductCard = ({ data, margin }) => {
           <h3>{title}</h3>
           <div>
             <h2>{price} UZS</h2>
-            <h2>Объем: {litre}л</h2>
           </div>
         </div>
         <div className="card-footer">
