@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e4890a92.css",
-    "main.js": "/static/js/main.21cd1ee3.js",
+    "main.css": "/static/css/main.239ea518.css",
+    "main.js": "/static/js/main.502402e0.js",
     "static/media/PartnerBodyImage.svg": "/static/media/PartnerBodyImage.3b68469163303fc4a5d2c589d6c9db65.svg",
     "static/media/category-oil.svg": "/static/media/category-oil.3e11e54b83347c65cede44f6b2c5e380.svg",
     "static/media/discount-img3.svg": "/static/media/discount-img3.978a7f0329ecd661987ec4488aa6d248.svg",
@@ -35,7 +35,6 @@
     "static/media/chart-black.svg": "/static/media/chart-black.d26e708e9fe2d7df1a4f3d7be14c249f.svg",
     "static/media/chart.svg": "/static/media/chart.bb0c4b95d6a009ce65dd0233e264ef1e.svg",
     "static/media/company-icon.svg": "/static/media/company-icon.42c0f698afd642a42bc00ea1299679f8.svg",
-    "static/media/instagram.svg": "/static/media/instagram.2380578a182e0791eec5640d13523e50.svg",
     "static/media/service-car.svg": "/static/media/service-car.cc7c4c21855e9e035eeaed8276193201.svg",
     "static/media/service-box.svg": "/static/media/service-box.29d8a2a8f73aa102daa7240e568c3c9b.svg",
     "static/media/exit.svg": "/static/media/exit.e91782ac8f591ce2d4361349b0721713.svg",
@@ -44,7 +43,6 @@
     "static/media/home.svg": "/static/media/home.f4d06f77963cf5325863eeafa8b514e1.svg",
     "static/media/safety.svg": "/static/media/safety.a28a88c5f6ab1d8cb0f41f5cf587e361.svg",
     "static/media/shopCart.svg": "/static/media/shopCart.75858293adb58114b09d2987411a688c.svg",
-    "static/media/facebook.svg": "/static/media/facebook.aba22e79bfa540b90f2856e29c35e5d8.svg",
     "static/media/korzinka.svg": "/static/media/korzinka.0b7374a8949bac39b976b00b5811c05a.svg",
     "static/media/home-icon.svg": "/static/media/home-icon.82296706915e7b7cc7e45d372680e125.svg",
     "static/media/Logo.svg": "/static/media/Logo.7e26695d710830acc6e75d2828ed23c7.svg",
@@ -62,11 +60,11 @@
     "static/media/decrease.svg": "/static/media/decrease.77e4f2a3706c829dc5b095b1c79e93cc.svg",
     "static/media/Arrow-down.svg": "/static/media/Arrow-down.402a45f6831dbe2b6cabe34c0cf0b446.svg",
     "static/media/Arrow-up.svg": "/static/media/Arrow-up.f9e0e3baa6b63931910a521842e9bf4e.svg",
-    "main.e4890a92.css.map": "/static/css/main.e4890a92.css.map",
-    "main.21cd1ee3.js.map": "/static/js/main.21cd1ee3.js.map"
+    "main.239ea518.css.map": "/static/css/main.239ea518.css.map",
+    "main.502402e0.js.map": "/static/js/main.502402e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4890a92.css",
-    "static/js/main.21cd1ee3.js"
+    "static/css/main.239ea518.css",
+    "static/js/main.502402e0.js"
   ]
 }
