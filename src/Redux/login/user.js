@@ -52,6 +52,6 @@ export const users = createSlice({
 	},
 });
 
-export const {} = users.actions;
+// export const {} = users.actions;
 
 export default users.reducer;

@@ -15,7 +15,9 @@ Axios.interceptors.request.use(
 		}
 		return configs;
 	},
-	(err) => {}
+	(err) => {
+		console.error(err);
+	}
 );
 
 Axios.interceptors.response.use(

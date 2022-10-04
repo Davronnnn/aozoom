@@ -41,9 +41,3 @@ i18n
 	});
 
 export default i18n;
-
-// Importing translation files
-
-//Creating object with the variables of imported translation files
-
-//i18N Initialization

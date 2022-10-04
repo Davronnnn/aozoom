@@ -1,16 +1,13 @@
-import React from 'react';
 import ScrollToTop from '../ScrollToTop';
 import Admin from './Admin/Admin';
 import MainLanding from './Landing/MainLanding';
 import './App.css';
 import Home from './Admin/containers/Home/Home';
-import { useRef } from 'react';
-import { useEffect } from 'react';
+
 import { useState } from 'react';
 function App() {
 	const [state, setState] = useState(true);
 	let user_info = JSON.parse(localStorage.getItem('user_info'));
-	const ref = useRef();
 
 	return (
 		<>

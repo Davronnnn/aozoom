@@ -20,7 +20,6 @@ import { UserIcon, ShopCartIcon } from '../../utils/Images';
 import { StyledNavUl } from './NavUl.style';
 import Navigation from './Navigation';
 import useFetchHook from '../../customhooks/useFetchHook';
-import axios from 'axios';
 import Axios from '../../utils/axios';
 import Basket from '../Basket/Basket';
 import { useDispatch, useSelector } from 'react-redux';
@@ -159,9 +158,9 @@ function Navbar(props) {
 										alt='Logo'
 									/>
 								</a>
-								<div className='birja_block'>
+								{/* <div className='birja_block'>
 									<img src={Birja} alt='logo' />
-								</div>
+								</div> */}
 							</div>
 							<div>
 								<div
@@ -246,7 +245,7 @@ function Navbar(props) {
 										alignItems: 'center',
 									}}>
 									<div className='nav_link' to='/'>
-										<img src={Neft} />
+										<img src={Neft} alt='neft' />
 										<Dropdown
 											overlay={menu}
 											on
@@ -256,18 +255,18 @@ function Navbar(props) {
 									</div>
 								</div>
 								<div>
-									<NavLink className='nav_link' to='/'>
-										<img src={HomeIcon} />
+									<NavLink className='nav_link' to='/' end>
+										<img src={HomeIcon} alt='home-icon' />
 										{t('p3')}
 									</NavLink>
 								</div>
 								<div>
 									<NavLink className='nav_link' to='/about'>
-										<img src={CompanyIcon} />
+										<img src={CompanyIcon} alt='company' />
 										{t('p4')}
 									</NavLink>
 								</div>
-								<div>
+								{/* <div>
 									<NavLink className='nav_link' to='/partner'>
 										<img src={PartnerIcon} />
 										{t('p5')}
@@ -278,12 +277,12 @@ function Navbar(props) {
 										<img src={PurchaserIcon} />
 										{t('p6')}
 									</NavLink>
-								</div>
+								</div> */}
 								<div>
 									<NavLink
 										className='nav_link'
 										to='/products'>
-										<img src={ProductIcon} />
+										<img src={ProductIcon} alt='product' />
 										{t('p7')}
 									</NavLink>
 								</div>

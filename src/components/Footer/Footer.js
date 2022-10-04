@@ -1,13 +1,12 @@
 import React, { useCallback, useState } from 'react';
 import { Col, Row, Button, Form, Input, message } from 'antd';
-import { FaTelegramPlane, FaInstagram } from 'react-icons/fa';
+import { FaTelegramPlane, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Modal from 'antd/lib/modal/Modal';
 import { StyledContainer } from '../../styles/Container.style';
 import { StyledFooter } from './Footer.style';
 import Axios from '../../utils/axios';
-import InstagramIcon from '../../assets/img/instagram.svg';
-import FacebookIcon from '../../assets/img/facebook.svg';
+
 import { useTranslation } from 'react-i18next';
 import colors from '../../constants/colors';
 const { TextArea } = Input;
@@ -135,15 +134,15 @@ function Footer() {
 							}}>
 							<div className='contact'>
 								<h4 className='footer_heading'>{t('p20')}</h4>
-								<a href="https://www.google.com/maps/place/41°19'55.0%22N+69°14'56.7%22E/@41.331939,69.2468823,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xce22268ab1beb8ec!8m2!3d41.331939!4d69.249071">
+								{/* <a href="https://www.google.com/maps/place/41°19'55.0%22N+69°14'56.7%22E/@41.331939,69.2468823,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xce22268ab1beb8ec!8m2!3d41.331939!4d69.249071">
 									{t('p30')}
-								</a>
+								</a> */}
 								<a href='mailto:info@email.com'>
 									Эл. почта: info@gazoil.uz{' '}
 								</a>
-								<a href='tel:+998 77 777 73 13'>
+								<a href='tel:+998781227700'>
 									{' '}
-									Телефон: +998 77 777 73 13
+									Телефон: +998 (78) 122 77 00
 								</a>
 							</div>
 						</Col>
@@ -161,7 +160,10 @@ function Footer() {
 									</h4>
 									<div className='social_icons'>
 										<div>
-											<a href='https://t.me/gazoiluz'>
+											<a
+												target={'_blank'}
+												rel='noreferrer'
+												href='https://t.me/aozoomuzbekistan'>
 												<FaTelegramPlane
 													color={colors.main}
 													size='20'
@@ -169,8 +171,22 @@ function Footer() {
 											</a>
 										</div>
 										<div>
-											<a href='https://www.instagram.com/gazoiluz/'>
+											<a
+												target={'_blank'}
+												rel='noreferrer'
+												href='https://www.instagram.com/aozoomuzbekistan/'>
 												<FaInstagram
+													color={colors.main}
+													size='20'
+												/>
+											</a>
+										</div>
+										<div>
+											<a
+												target={'_blank'}
+												rel='noreferrer'
+												href='https://www.facebook.com/aozoomuzbekistan/'>
+												<FaFacebook
 													color={colors.main}
 													size='20'
 												/>
