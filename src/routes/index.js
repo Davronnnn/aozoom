@@ -13,6 +13,7 @@ import LandingNews from '../views/Landing/LandingNews/LandingNews';
 import NewsDetail from '../views/Landing/LandingNews/NewsDetail';
 import ResetPassword from '../views/Admin/Auth/RestPassword';
 import SetPassword from '../views/Admin/Auth/SetPassword';
+import ProductDetail from '../views/ProductView/ProductDetail';
 
 const LandingMain = lazy(() => import('../views/Landing/Landing'));
 
@@ -62,6 +63,10 @@ export const ROUTES = [
 	{
 		path: '/products',
 		component: <ProductView />,
+	},
+	{
+		path: '/products/:productId',
+		component: <ProductDetail />,
 	},
 	{
 		path: '/my-account',

@@ -26,7 +26,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import HeaderCarousel from './HeaderCarousel';
 import { useTranslation } from 'react-i18next';
 import { setLanguage } from '../../Redux/language/languageSlice';
-import { SearchContext } from '../../views/Landing/SeacrhContext';
+import { SearchContext } from '../../views/Landing/SearchContext';
 import { SelectContext } from './SelectContext';
 
 const { Search } = Input;

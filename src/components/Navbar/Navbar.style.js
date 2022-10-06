@@ -5,8 +5,8 @@ export const StyledNavbar = styled.div`
 	background-color: ${COLORS.white};
 	margin: 0px;
 	min-height: 100px;
-	padding-top: 10px;
-	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 18px;
 	box-shadow: 0px 7px 65px rgba(0, 0, 0, 0.06);
 	.logoImgHref {
 		@media only screen and (max-width: 992px) {
