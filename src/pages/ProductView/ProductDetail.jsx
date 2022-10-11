@@ -1,7 +1,8 @@
-import { Button, Image, message, Row, Space, Spin } from 'antd';
+import { Button, Image, message, Row, Space, Spin, Typography } from 'antd';
+
 import { useState, useCallback, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { ProductDetailStyle } from '../../components/ProductDetail/ProductDetailStyle';
+import { ProductDetailPageStyle } from './ProducDetailPageStyle';
 import Axios from '../../utils/axios';
 
 const ProductDetail = () => {
@@ -56,7 +57,7 @@ const ProductDetail = () => {
 						<Spin />
 					</Space>
 				) : (
-					<ProductDetailStyle color={'#364A7E'}>
+					<ProductDetailPageStyle color={'#F47321'}>
 						<div className='detail-heading'>
 							<div className='heading-images'>
 								<Image
@@ -93,10 +94,10 @@ const ProductDetail = () => {
 							</div>
 						</div>
 						<div className='detail-body'>
-							<p>{product.title}</p>
+							<h3 className='detail-title'>{product.title}</h3>
 							<p>{product.description}</p>
 						</div>
-					</ProductDetailStyle>
+					</ProductDetailPageStyle>
 				)}
 			</Row>
 		</div>

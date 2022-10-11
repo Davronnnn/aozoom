@@ -26,6 +26,16 @@ export const StyledProductCard = styled.div`
 		top: 5%;
 		right: 5%;
 		cursor: grab;
+
+		&:hover::after {
+			content: 'preview';
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: rgba(244, 115, 33, 0.8);
+			text-transform: uppercase;
+		}
 	}
 
 	.quick-img {
