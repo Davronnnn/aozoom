@@ -28,7 +28,7 @@ export const StyledProductCard = styled.div`
 		cursor: grab;
 
 		&:hover::after {
-			content: 'preview';
+			content: 'Кўриш';
 			position: absolute;
 			bottom: -10px;
 			left: 50%;
