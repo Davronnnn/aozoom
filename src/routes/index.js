@@ -1,21 +1,19 @@
 import { lazy } from 'react';
-import AboutCompany from '../views/Landing/AboutCompany';
-import Register from '../views/Admin/Auth/Register';
-import SignIn from '../views/Admin/Auth/SignIn';
-import AdminSignIn from '../views/Admin/Auth/AdminSignIn';
-import Landing from '../views/Landing/Landing';
-import Partner from '../views/Landing/Partner';
-import Purchaser from '../views/Landing/Purchaser';
-import ProductView from '../views/ProductView/ProductView';
-import UserAccount from '../views/UserAccount/UserAccount';
-import EditProduct from '../views/Admin/containers/EditProduct';
-import LandingNews from '../views/Landing/LandingNews/LandingNews';
-import NewsDetail from '../views/Landing/LandingNews/NewsDetail';
-import ResetPassword from '../views/Admin/Auth/RestPassword';
-import SetPassword from '../views/Admin/Auth/SetPassword';
-import ProductDetail from '../views/ProductView/ProductDetail';
-
-const LandingMain = lazy(() => import('../views/Landing/Landing'));
+import AboutCompany from '../pages/Landing/AboutCompany';
+import Register from '../pages/Admin/Auth/Register';
+import SignIn from '../pages/Admin/Auth/SignIn';
+import AdminSignIn from '../pages/Admin/Auth/AdminSignIn';
+import Landing from '../pages/Landing/Landing';
+import Partner from '../pages/Landing/Partner';
+import Purchaser from '../pages/Landing/Purchaser';
+import ProductView from '../pages/ProductView/ProductView';
+import UserAccount from '../pages/UserAccount/UserAccount';
+import EditProduct from '../pages/Admin/containers/EditProduct';
+import LandingNews from '../pages/Landing/LandingNews/LandingNews';
+import NewsDetail from '../pages/Landing/LandingNews/NewsDetail';
+import ResetPassword from '../pages/Admin/Auth/RestPassword';
+import SetPassword from '../pages/Admin/Auth/SetPassword';
+import ProductDetail from '../pages/ProductView/ProductDetail';
 
 let role = JSON.parse(localStorage.getItem('user_info'))?.data?.user?.role;
 

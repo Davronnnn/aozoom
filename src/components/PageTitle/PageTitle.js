@@ -1,14 +1,18 @@
-import React from 'react'
-import {StyledPageTitle} from './PageTitle.style'
+import React from 'react';
+import styled from 'styled-components';
 
-function PageTitle({title}) {
-  return (
-    <StyledPageTitle>
-      <h4>
-        {title}
-      </h4>
-    </StyledPageTitle>
-  )
+const StyledPageTitle = styled.div`
+	h4 {
+		font-size: 24px;
+		line-height: 29px;
+	}
+`;
+function PageTitle({ title }) {
+	return (
+		<StyledPageTitle>
+			<h4>{title}</h4>
+		</StyledPageTitle>
+	);
 }
 
-export default PageTitle
+export default PageTitle;

@@ -2,11 +2,19 @@ import React from 'react';
 import ProductCard from '../../components/NewProducts/ProductCard';
 import Service from '../../components/Servise/Service';
 import { ProductViewStyle } from './ProductViewStyle';
-import { Button, Checkbox, Col, Collapse, InputNumber, Row, Spin } from 'antd';
+import {
+	Button,
+	Checkbox,
+	Col,
+	Collapse,
+	InputNumber,
+	Pagination,
+	Row,
+	Spin,
+} from 'antd';
 import { StyledContainer } from '../../styles/Container.style';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import useFetchHook from '../../customhooks/useFetchHook';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { SearchContext } from '../Landing/SearchContext';
@@ -14,7 +22,6 @@ import Axios from '../../utils/axios';
 import { SelectContext } from '../../components/Navbar/SelectContext';
 import { useRef } from 'react';
 import { useCallback } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function ProductView() {
 	const [productList, setProductList] = useState([]);
@@ -44,7 +51,7 @@ export default function ProductView() {
 		setCategory(newCategory);
 	};
 
-	const onChange = (value) => {};
+	// const onChange = (value) => {};
 
 	const makeVisible = () => {
 		setVisible(!visible);
@@ -105,10 +112,8 @@ export default function ProductView() {
 		<>
 			<StyledContainer>
 				<div className='container'>
-					{width < 768 ? (
+					{width < 768 && (
 						<h3 onClick={() => makeVisible()}>Фильтр</h3>
-					) : (
-						''
 					)}
 					<ProductViewStyle
 						style={
@@ -225,14 +230,11 @@ export default function ProductView() {
 													span: 8,
 												}}
 												key={index}>
-												<Link
-													to={`/products/${item.id}`}>
-													<ProductCard
-														margin='10px'
-														key={index}
-														data={item}
-													/>
-												</Link>
+												<ProductCard
+													margin='10px'
+													key={index}
+													data={item}
+												/>
 											</Col>
 										);
 									})
@@ -240,7 +242,11 @@ export default function ProductView() {
 							</Row>
 						</div>
 					</ProductViewStyle>
-					{/* <Pagination  onChange={(e)=> console.log(e)} current={1} total={results?.length}/> */}
+					{/* <Pagination
+						onChange={(e) => console.log(e)}
+						current={1}
+						total={results?.length}
+					/> */}
 				</div>
 			</StyledContainer>
 			<Service />

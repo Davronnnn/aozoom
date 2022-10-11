@@ -1,36 +1,28 @@
 import React, { useState, useRef, useContext } from 'react';
-import { Button, Input, Space, Select, Dropdown, Menu, message } from 'antd';
-import { SearchOutlined, MenuOutlined } from '@ant-design/icons';
+import { Space, Dropdown, Menu } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
 import { StyledContainer } from '../../styles/Container.style';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { StyledNavbar } from './Navbar.style';
-import { Col, Row } from 'antd';
 import Logo from '../../assets/aozoom_logo_website.png';
-import Birja from '../../assets/img/Birja.svg';
 import Neft from '../../assets/img/neft-logo.svg';
 import HomeIcon from '../../assets/img/home-icon.svg';
 import CompanyIcon from '../../assets/img/company-icon.svg';
-import PartnerIcon from '../../assets/img/partner-icon.svg';
-import PurchaserIcon from '../../assets/img/purchaser-icon.svg';
 import ProductIcon from '../../assets/img/product-icon.svg';
 import Menuicon from '../../assets/img/menu-icon.svg';
-import { MenuIcon, SearchIcon } from '../../utils/Images';
+import { SearchIcon } from '../../utils/Images';
 import COLORS from '../../constants/colors';
 import { UserIcon, ShopCartIcon } from '../../utils/Images';
 import { StyledNavUl } from './NavUl.style';
 import Navigation from './Navigation';
-import useFetchHook from '../../customhooks/useFetchHook';
 import Axios from '../../utils/axios';
 import Basket from '../Basket/Basket';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import HeaderCarousel from './HeaderCarousel';
 import { useTranslation } from 'react-i18next';
 import { setLanguage } from '../../Redux/language/languageSlice';
-import { SearchContext } from '../../views/Landing/SearchContext';
+import { SearchContext } from '../../pages/Landing/SearchContext';
 import { SelectContext } from './SelectContext';
-
-const { Search } = Input;
-const { Option } = Select;
 
 function Navbar(props) {
 	const [search, setSearch] = useState('');
@@ -93,7 +85,7 @@ function Navbar(props) {
 	const loginToAccount = () => {
 		let user = JSON.parse(localStorage.getItem('user'));
 		if (user?.token) {
-			if (user.admin.role == 'Customer') {
+			if (user.admin.role === 'Customer') {
 				navigate('/my-account');
 			}
 		} else {
@@ -136,8 +128,6 @@ function Navbar(props) {
 				handleCancel={props.handleCancel}
 			/>
 			<StyledNavbar>
-				{/* <HeaderCarousel /> */}
-
 				<StyledContainer>
 					<div className='container'>
 						<div className='wrapper'>
@@ -158,9 +148,6 @@ function Navbar(props) {
 										alt='Logo'
 									/>
 								</a>
-								{/* <div className='birja_block'>
-									<img src={Birja} alt='logo' />
-								</div> */}
 							</div>
 							<div>
 								<div
@@ -201,8 +188,8 @@ function Navbar(props) {
 										</button>
 									</div>
 									<select onChange={changeLangugae}>
-										<option value='ru'>Ru</option>
 										<option value='uz'>Uz</option>
+										<option value='ru'>Ru</option>
 									</select>
 								</div>
 							</div>

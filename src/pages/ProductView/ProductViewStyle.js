@@ -8,10 +8,12 @@ export const ProductViewStyle = styled.div`
 		background: #fafafa;
 		margin-right: 40px;
 		h4 {
-			padding: 4px 16px 0;
+			margin: 29px 21px;
 			font-size: 24px;
 			font-weight: 300;
-			width: 70%;
+			line-height: 120%;
+
+			width: 80%;
 		}
 		.ant-collapse-ghost
 			> .ant-collapse-item

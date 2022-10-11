@@ -3,7 +3,6 @@ import { Button, Form, Input, notification } from 'antd';
 
 import { StyledContainer } from '../../../styles/Container.style';
 import { StyledSignIn } from './Auth.style';
-import { useNavigate } from 'react-router-dom';
 import Axios from '../../../utils/axios';
 import { useDispatch } from 'react-redux';
 import { signUpAction } from '../../../store/actios/authAcions';
@@ -13,7 +12,6 @@ function AdminSignIn() {
 	const [password, setPassword] = useState(null);
 	const dispatch = useDispatch();
 
-	const navigate = useNavigate();
 	const userData = {
 		login: userName,
 		password: password,

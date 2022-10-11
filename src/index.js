@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import App from './views/App';
+import App from './pages/App';
 import 'antd/dist/antd.less';
 import 'normalize.css';
 import { Provider } from 'react-redux';
